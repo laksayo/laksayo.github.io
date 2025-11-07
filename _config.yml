@@ -8,6 +8,12 @@ homepage: https://laksayo.github.io
 instagram_username: laksayo
 github_username: laksayo
 
+# Header Pages for Navigation
+header_pages:
+  - "/Info"
+  - "/Conventions"
+  - "/rambles"
+
 # Build settings
 # Remove theme: or remote_theme: because the theme is local
 plugins:
