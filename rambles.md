@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "rambles"
+permalink: /rambles/ # the permalink should match the page path
 ---
 
 # rambles
