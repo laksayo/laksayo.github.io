@@ -163,12 +163,21 @@ button {
 /* Header & Footer (menu stays fixed) */
 /* ============================= */
 
-.site-header .logo-image {
-  max-height: 50px;   /* limits the height */
-  width: auto;
-  height: auto;       /* maintain aspect ratio */
-  display: block;
+.site-header {
+  display: flex;
+  align-items: center; /* vertically centers items */
+  justify-content: space-between; /* logo left, menu right */
+  padding: 20px 0;
 }
+
+.site-header .logo-link {
+  display: block; /* ensures proper sizing */
+}
+
+.main-nav ul {
+  margin-top: 0; /* remove previous top margin */
+}
+
 
 
 .site-footer {
