@@ -2,20 +2,24 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
+  <!-- Link your main stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-  <body>
+  <!-- Add your chosen color scheme class here -->
+  <body class="scheme-1">
 
+    <!-- Header -->
     {%- include header.html -%}
 
+    <!-- Main content -->
     <div class="py-5">
       <div class="container page-content">
           {{ content }}
       </div>
     </div>
 
+    <!-- Footer -->
     {%- include footer.html -%}
 
   </body>
-
 </html>
