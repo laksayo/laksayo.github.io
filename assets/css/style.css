@@ -221,25 +221,21 @@ button.outline:hover {
   display: block;
 }
 
-/* ============================= */
-/* Responsive: stack menu/logo */
-/* ============================= */
+/* Responsive header: stack logo on top on small screens */
 @media (max-width: 720px) {
   .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  .header-top {
-    margin-left: 0; /* reset for stacked layout */
+    flex-direction: column; /* stack vertically */
+    align-items: center;    /* center logo and nav horizontally */
+    gap: 15px;              /* spacing between logo and nav */
   }
 
   .main-nav ul {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column; /* nav items stack vertically */
+    gap: 10px;              /* smaller gap for mobile */
+    align-items: center;    /* center links */
   }
 }
+
 /* ============================= */
 /* Site Content Flex for Sticky Footer */
 /* ============================= */
