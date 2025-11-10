@@ -206,121 +206,88 @@ button.outline:hover {
 .site-content { flex: 1; }
 
 /* ============================= */
-/* Footer (Updated for Alignment & Padding) */
+/* Footer Flexible Layout */
 /* ============================= */
 .site-footer {
   font-family: 'Quattrocento Sans', sans-serif;
-  padding: 60px 0; /* vertical padding */
-
+  padding: 60px 20px;
+  border-top: 2px solid var(--scheme-4-btn-bg);
   background-color: var(--scheme-4-bg);
   color: var(--scheme-4-text);
-
-  border-top: none;
-  box-shadow:none;
 }
 
-.site-footer .container {
-  max-width: 1600px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0 20px; /* horizontal padding ensures alignment */
-}
-
+/* Footer Container Flex */
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* default: left + right */
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
 }
 
+/* Footer Left Text */
 .footer-left {
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-right: 20px; /* added padding for spacing from right section */
 }
 
-/* Author (prominent) */
 .footer-author {
   font-weight: 700;
-  font-size: 1.25rem; /* slightly larger */
-  color: var(--scheme-4-text);
+  font-size: 1.25rem;
   margin: 0;
 }
 
-/* Message (secondary) */
 .footer-message {
-  font-size: 1rem;
-  font-weight: 400;
-  color: rgba(239, 236, 236, 0.9); /* slightly lighter for hierarchy */
+  font-size: 0.9rem;
   margin: 0;
 }
 
-/* Copyright (smallest / muted) */
-.footer-copy {
-  font-size: 0.85rem;
-  font-weight: 300;
-  color: rgba(239, 236, 236, 0.7);
-  margin-top: 10px;
-}
-
-/* Social icons */
-.footer-right {
-  flex: 0 0 auto;
+/* Social Icons Container */
+.footer-social {
   display: flex;
-  justify-content: flex-end;
-  gap: 15px; /* spacing between icons */
+  justify-content: flex-start; /* change to center or flex-end if needed */
+  gap: 15px;
+  margin: 10px 0; /* spacing between message and copyright */
 }
 
-/* Social icons styling, independent of left/right placement */
-.social-icons {
-  list-style: none;        /* no bullets */
-  display: flex;           /* horizontal layout */
-  gap: 12px;               /* spacing between icons */
-  padding-left: 0;         /* remove default ul padding */
-  margin: 5px 0;           /* spacing above/below */
+.footer-social li {
+  list-style: none;
 }
 
-.social-icons li {
-  display: inline-block;
-}
-
-.social-icons li img {
+.footer-social li img {
   display: block;
-  width: 20px;  /* adjust size */
-  height: 20px;
+  width: 20px;   /* smaller than default */
+  height: 20px;  /* smaller than default */
   transition: opacity 0.3s ease;
 }
 
-.social-icons li a:hover img {
+.footer-social li a:hover img {
   opacity: 0.7;
 }
 
+/* Footer Copyright */
+.footer-copy {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  color: #555;
+}
 
-.site-footer a { color: inherit; text-decoration: none; }
-.site-footer a:hover { color: var(--scheme-2-btn-bg); }
-
-/* ============================= */
-/* Responsive Footer Adjustments */
-/* ============================= */
+/* Responsive Footer */
 @media (max-width: 720px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
   }
 
-  .footer-left,
-  .footer-right {
-    width: 100%;
-    display: flex;
+  .footer-left {
+    align-items: center;
+  }
+
+  .footer-social {
     justify-content: center;
-    padding: 0; /* remove horizontal padding for mobile */
   }
-
-  .footer-right .social-icons { justify-content: center; }
-  .site-footer .footer-left p { text-align: center; margin-bottom: 10px; }
 }
+
