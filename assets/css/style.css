@@ -139,8 +139,9 @@ button.outline:hover {
 
   /* Gradient from top with opacity */
  background: linear-gradient(
-    rgba(223, 124, 109, 0.2), /* top color with opacity */
-    var(--scheme-4-bg)         /* bottom solid color */
+   180deg,
+     rgba(var(--scheme-4-bg), 0.1) 0%,  /* scheme-4-bg with 10% opacity */
+  var(--scheme-1-bg) 100%       /* scheme-1-bg solid at bottom */
 );
 
 }
