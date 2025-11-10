@@ -1,29 +1,33 @@
 <header class="site-header scheme-1">
   <div class="header-container">
     <!-- Navigation on the LEFT -->
-  <nav class="main-nav" aria-label="Main Navigation">
-    <ul>
-      <li><a href="#" class="current">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
     <!-- Logo on the RIGHT -->
     <div class="header-top">
-      <a href="#" class="logo-link">
+      <a href="index.html" class="logo-link">
         <img src="logo.png" alt="Logo" class="logo-image">
       </a>
     </div>
   </div>
 
-  <!-- Highlight current page in nav (keep your JS) -->
+  <!-- Highlight current page in nav -->
   <script>
+    // Get current path
     const currentPath = window.location.pathname.replace(/\/$/, '');
     document.querySelectorAll('.main-nav a').forEach(link => {
-      const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
-      if (linkPath === currentPath) link.classList.add('current');
+      const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/$/, '');
+      if (linkPath === currentPath) {
+        link.classList.add('current');
+      }
     });
   </script>
 </header>
+
