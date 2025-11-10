@@ -140,7 +140,7 @@ button.outline:hover {
   /* Gradient from top with opacity */
  background: linear-gradient(
    180deg,
-     rgba(var(--scheme-4-bg), 0.1) 0%,  /* scheme-4-bg with 10% opacity */
+     rgba(var(--scheme-4-bg), 0.2) 0%,  /* scheme-4-bg with 10% opacity */
   var(--scheme-1-bg) 100%       /* scheme-1-bg solid at bottom */
 );
 
@@ -208,7 +208,7 @@ button.outline:hover {
 /* Footer main container */
 .site-footer {
   font-family: 'Quattrocento Sans', sans-serif;
-  padding: 60px 0;
+  padding: 50px 0;
   background-color: var(--scheme-4-bg);
   color: var(--scheme-4-text);
 }
@@ -222,7 +222,7 @@ button.outline:hover {
   display: flex;
   flex-direction: column;
   text-align: left; /* keeps text left-aligned */
-  gap: 30px; /* vertical spacing between footer items */
+  gap: 50px; /* vertical spacing between footer items */
 }
 
 /* Footer author */
@@ -236,15 +236,15 @@ button.outline:hover {
 .footer-social {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
 
 .footer-social li img {
   display: block;
-  width: 18px; /* adjustable */
-  height: 18px; /* adjustable */
+  width: 15px; /* adjustable */
+  height: 15px; /* adjustable */
   transition: opacity 0.3s ease;
 }
 
