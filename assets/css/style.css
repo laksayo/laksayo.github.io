@@ -136,8 +136,13 @@ button.outline:hover {
   justify-content: space-between;
   align-items: center;
   padding: 20px 15px;
-  background: linear-gradient(180deg, #DF7C6D 0%, #EFECEC 100%);
-  border-bottom: 1px solid #eaeaea;
+
+  /* Gradient from top with opacity */
+ background: linear-gradient(
+    rgba(223, 124, 109, 0.2), /* top color with opacity */
+    var(--scheme-4-bg)         /* bottom solid color */
+);
+
 }
 
 .site-header .logo-link { display: block; height: auto; }
