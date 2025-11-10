@@ -1,16 +1,32 @@
-<footer class="site-footer">
-  <div class="footer-left">
-    &copy; {{ site.author | escape }} {{ "now" | date: "%Y" }}
-  </div>
+<footer class="site-footer scheme-4">
+  <div class="container footer-container">
 
-  <div class="footer-right social-icons">
-    {% for item in site.social %}
-      <a href="{{ item.url }}" target="_blank" title="{{ item.name }}">
-        <img src="{{ item.icon }}" alt="{{ item.name }}">
-      </a>
-    {% endfor %}
+    <!-- Left: Copyright / Author -->
+    <div class="footer-left">
+      &copy; {{ site.time | date: "%Y" }} 
+      {%- if site.author -%}
+        {{ site.author | escape }}
+      {%- else -%}
+        {{ site.description | escape }}
+      {%- endif -%}
+    </div>
+
+    <!-- Right: Social Icons -->
+    <div class="footer-right">
+      <ul class="social-icons">
+        {%- for social in site.social -%}
+          <li>
+            <a href="{{ social.url }}" target="_blank" rel="noopener">
+              <img src="{{ social.icon }}" alt="{{ social.name }}" />
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+
   </div>
 </footer>
+
 
 <!-- Analytics scripts remain here -->
 {% if site.fathom_key %}
