@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
   {%- include head.html -%}
 
   <!-- Link your main stylesheet -->
@@ -12,14 +11,16 @@
 
     <!-- Main content (for sticky footer) -->
     <main class="site-content">
-      <div class="py-5">
-        <div class="container page-content">
-          {{ content }}
-        </div>
+      <div class="container page-content">
+        {{ content }}
       </div>
     </main>
 
     <!-- Footer -->
-    {%- include footer.html -%}
+    <footer class="site-footer scheme-4">
+      <div class="container">
+        {%- include footer.html -%}
+      </div>
+    </footer>
   </body>
 </html>
