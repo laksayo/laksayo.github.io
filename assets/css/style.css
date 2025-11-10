@@ -218,7 +218,7 @@ button.outline:hover {
   max-width: 1600px;
   width: 90%;
   margin: 0 auto;
-  padding: 0 15px; /* match main container */
+  padding: 0 0px; /* match main container */
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* top-aligned */
@@ -229,7 +229,7 @@ button.outline:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 60px; /* vertical spacing between social icons, message, author */
+  gap: 30px; /* vertical spacing between social icons, message, author */
 }
 
 /* Footer social icons */
