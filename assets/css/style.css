@@ -218,18 +218,21 @@ button.outline:hover {
   max-width: 1600px;
   width: 90%;
   margin: 0 auto;
-  padding: 0 0px; /* match main container */
+  padding: 0 15px; /* match main container */
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* top-aligned */
-  gap: 40px; /* vertical spacing between .footer-content and copyright */
+  gap: 60px; /* vertical spacing between .footer-content and copyright */
 }
 /* Flex column for first 3 elements with vertical spacing */
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px; /* vertical spacing between social icons, message, author */
+  gap: 15px; /* vertical spacing between social icons, message, author */
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Footer social icons */
@@ -264,7 +267,7 @@ button.outline:hover {
 /* Footer copyright */
 .footer-copy {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.8); /* slightly whiter */
+  color: rgba(255, 255, 255, 0.7); /* slightly whiter */
   margin: 0;
 }
 
