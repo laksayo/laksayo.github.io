@@ -1,13 +1,9 @@
 <header class="site-header">
-  <div class="container">
-    <!-- Logo -->
-    <div class="header-top">
-      <a href="{{ site.homepage | relative_url }}" class="logo-link">
-        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="@Laksayo Logo" class="logo-image" />
-      </a>
-    </div>
+  <div class="header-container left"> <!-- can change left/center/right -->
+    <a href="{{ site.homepage | relative_url }}" class="logo-link">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="@Laksayo Logo" class="logo-image" />
+    </a>
 
-    <!-- Navigation -->
     <nav class="main-nav site-nav">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
@@ -18,14 +14,12 @@
     </nav>
   </div>
 
-  <!-- Highlight current page in nav -->
+  <!-- Highlight current page in nav (keep your JS) -->
   <script>
-    const currentPath = window.location.pathname.replace(/\/$/, ''); // remove trailing slash
+    const currentPath = window.location.pathname.replace(/\/$/, '');
     document.querySelectorAll('.main-nav a').forEach(link => {
       const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
-      if (linkPath === currentPath) {
-        link.classList.add('current');
-      }
+      if (linkPath === currentPath) link.classList.add('current');
     });
   </script>
 </header>
