@@ -8,27 +8,26 @@ header_pages:
   - "/info/"
   - "/conventions/"
   - "/rambles/"
-  
-# Social Media Links (for footer)
-social:
-  - name: Telegram
-    url: https://web.telegram.org/k/#@laksayostore
-    icon: /assets/icons/telegram.png
-  - name: Instagram
-    url: https://instagram.com/laksayo
-    icon: /assets/icons/instagram.png
-  - name: Vgen
-    url: https://vgen.co/laksayo
-    icon: /assets/icons/vgen.png
-  - name: Kofi
-    url: https://kofi.com/laksayo
-    icon: /assets/icons/kofi.png
 
 # Footer
-author: "Laksayo"
-footer_message: "Illustration. Imagination. Connection. Always experimenting, always hands-on."
-copyright: "All rights reserved."
-
+footer:
+  author: "Laksayo"
+  message: "Illustration. Imagination. Connection. Always experimenting, always hands-on."
+  copyright: "All rights reserved."
+  social:
+    - name: Telegram
+      url: https://web.telegram.org/k/#@laksayostore
+      icon: /assets/icons/telegram.png
+    - name: Instagram
+      url: https://instagram.com/laksayo
+      icon: /assets/icons/instagram.png
+    - name: Vgen
+      url: https://vgen.co/laksayo
+      icon: /assets/icons/vgen.png
+    - name: Kofi
+      url: https://kofi.com/laksayo
+      icon: /assets/icons/kofi.png
+      
 # Build settings
 # Remove theme: or remote_theme: because the theme is local
 plugins:
