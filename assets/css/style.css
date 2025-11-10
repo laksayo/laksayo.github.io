@@ -136,6 +136,7 @@ button.outline:hover {
   justify-content: space-between;
   align-items: center;
   padding: 20px 15px;
+  background: linear-gradient(180deg, #DF7C6D 0%, #EFECEC 100%);
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -204,10 +205,12 @@ button.outline:hover {
 .site-footer {
   font-family: 'Quattrocento Sans', sans-serif;
   padding: 60px 0; /* vertical padding */
-  border-top: 2px solid var(--scheme-4-btn-bg);
-  box-shadow: 0 -3px 10px rgba(0,0,0,0.05);
+
   background-color: var(--scheme-4-bg);
   color: var(--scheme-4-text);
+
+  border-top: none;
+  box-shadow:none;
 }
 
 .site-footer .container {
@@ -233,6 +236,31 @@ button.outline:hover {
   padding-right: 20px; /* added padding for spacing from right section */
 }
 
+/* Author (prominent) */
+.footer-author {
+  font-weight: 700;
+  font-size: 1.25rem; /* slightly larger */
+  color: var(--scheme-4-text);
+  margin: 0;
+}
+
+/* Message (secondary) */
+.footer-message {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(239, 236, 236, 0.9); /* slightly lighter for hierarchy */
+  margin: 0;
+}
+
+/* Copyright (smallest / muted) */
+.footer-copy {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: rgba(239, 236, 236, 0.7);
+  margin-top: 10px;
+}
+
+/* Social icons */
 .footer-right {
   flex: 0 0 auto;
   display: flex;
