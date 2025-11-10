@@ -206,7 +206,7 @@ button.outline:hover {
   background-color: var(--scheme-4-bg);
   color: var(--scheme-4-text);
   font-family: 'Quattrocento Sans', sans-serif;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .footer-container {
