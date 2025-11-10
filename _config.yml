@@ -3,16 +3,26 @@ author: laksayo
 email: laksayo.feedtheshark@gmail.com
 description: "Showcase of art and blog"
 
-# Header Links
-homepage: https://laksayo.github.io
-instagram_username: laksayo
-github_username: laksayo
-
 # Header Pages for Navigation
 header_pages:
   - "/info/"
   - "/conventions/"
   - "/rambles/"
+  
+# Social Media Links (for footer)
+social:
+  - name: Telegram
+    url: https://web.telegram.org/k/#@laksayostore
+    icon: /assets/icons/telegram.png
+  - name: Instagram
+    url: https://instagram.com/laksayo
+    icon: /assets/icons/instagram.png
+  - name: Vgen
+    url: https://vgen.co/laksayo
+    icon: /assets/icons/vgen.png
+  - name: Kofi
+    url: https://kofi.com/laksayo
+    icon: /assets/icons/kofi.png
 
 # Build settings
 # Remove theme: or remote_theme: because the theme is local
