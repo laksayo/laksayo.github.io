@@ -1,17 +1,21 @@
-<header class="site-header">
-  <div class="header-container left"> <!-- can change left/center/right -->
-    <a href="{{ site.homepage | relative_url }}" class="logo-link">
-      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="@Laksayo Logo" class="logo-image" />
-    </a>
-
-    <nav class="main-nav site-nav">
+<header class="site-header scheme-1">
+  <div class="header-container">
+    <!-- Navigation on the LEFT -->
+    <nav class="main-nav">
       <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/info/' | relative_url }}">Info</a></li>
-        <li><a href="{{ '/conventions/' | relative_url }}">Con Reservations</a></li>
-        <li><a href="{{ '/rambles/' | relative_url }}">Rambles</a></li>
+        <li><a href="#" class="current">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- Logo on the RIGHT -->
+    <div class="header-top">
+      <a href="#" class="logo-link">
+        <img src="logo.png" alt="Logo" class="logo-image">
+      </a>
+    </div>
   </div>
 
   <!-- Highlight current page in nav (keep your JS) -->
