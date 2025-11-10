@@ -157,7 +157,10 @@ button {
 @media (max-width: 720px) {
   .main-nav ul {
     flex-direction: column;
-    gap:
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
 
     body.scheme-1 .site-header {
   background-color: #EFECEC;
