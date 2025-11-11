@@ -19,4 +19,4 @@ I’m always excited to meet new people, share my art, and make lasting connecti
 
 At the moment, I am no longer selling items internationally or online. I will still be selling at conventions and you can check [Conventions page]({{ "/conventions/" | relative_url }}) to see where and when my booth will pop up next!
 
-I'm still taking digital commissions, you can check out my [VGen page](https://vgen.co/laksayo) to see my offerings, or send me a message for something fully customized.
+I'm still taking digital commissions! Check out my [VGen page](https://vgen.co/laksayo) to see my offerings, or send me a message for something fully customized.
