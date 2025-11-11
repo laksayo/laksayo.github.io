@@ -84,9 +84,9 @@ body {
 .main-content h4,
 .main-content h5,
 .main-content h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Trirong', serif !important;
   font-style: normal;
-  font-weight: 200; 
+  font-weight: 200 !important; 
   word-break: break-word;
   color: var(--text, rgb(37,37,37)); /*allows for color scheme overrides */
   -webkit-font-smoothing: antialiased;
