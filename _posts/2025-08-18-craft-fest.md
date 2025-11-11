@@ -6,7 +6,7 @@ categories: [blog]
 tags: [event, boothing]
 author: Laksayo
 image: "/assets/images/my-first-post-image.jpg" # Optional, for a featured image
-excerpt: ""
+excerpt: 
 permalink: /rambles/craft-fest/
 ---
 
