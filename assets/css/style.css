@@ -84,9 +84,9 @@ body {
 .main-content h4,
 .main-content h5,
 .main-content h6 {
-  font-family: 'Trirong', serif !important;
+  font-family: 'Trirong', serif;
   font-style: normal;
-  font-weight: 200 !important; 
+  font-weight: 300; 
   word-break: break-word;
   color: var(--text, rgb(37,37,37)); /*allows for color scheme overrides */
   -webkit-font-smoothing: antialiased;
