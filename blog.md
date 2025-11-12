@@ -9,7 +9,9 @@ body_class: blog-page
     {% for post in site.posts %}
       <article class="blog-card">
         <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          {% endif %}
         </a>
         <header>
           <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
