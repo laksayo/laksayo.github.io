@@ -495,11 +495,6 @@ body.blog-page .blog-card header {
   padding: 0.5rem 1rem;               /* full width below image */
   width: 100%;
 }
-body.blog-page .blog-card .excerpt {
-  padding: 0.25rem 0rem;               /* full width below image */
-  width: 100%;
-}
-
 
 /* Title + date + excerpt */
 body.blog-page .blog-card h2 {
@@ -517,9 +512,14 @@ body.blog-page .blog-card .post-date {
 
 body.blog-page .blog-card .excerpt {
   padding: 0.25rem 1rem 0.5rem; /* small padding around excerpt */
+  width: 100%;
   font-size: 0.95rem;
   line-height: 1.4;
   margin: 0;
+  overflow-wrap: break-word;  /* optional: prevent text overflow */
+  word-wrap: break-word;      /* legacy support */
+  hyphens: auto;              /* optional hyphenation */
+  text-align: justify;        /* optional text justification */
 }
 
 /* Mobile-friendly stacked layout */
