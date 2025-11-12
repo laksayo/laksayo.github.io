@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Your Post Title Here"
+date: 2025-11-12 12:00:00 +0000  # adjust date/time
+categories: [blog]                # add more categories if needed
+tags: [tag1, tag2]                # add relevant tags
+author: Your Name Here
+featured_image: "/assets/images/rambles/your-featured-image.jpg"
+media:
+  - type: image
+    src: "/assets/images/rambles/media-image1.jpg"
+  - type: image
+    src: "/assets/images/rambles/media-image2.jpg"
+  # add more media items if needed
+permalink: /rambles/your-post-slug/
+---
