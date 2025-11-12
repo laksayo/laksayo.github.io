@@ -5,9 +5,16 @@ date: 2025-06-09 12:00:00 +0000
 categories: [blog]
 tags: [event, cafe]
 author: Laksayo
-image: "/assets/images/my-first-post-image.jpg" # Optional, for a featured image
-excerpt: 
-permalink: /rambles/apple-y-ever-after/
+featured_image: "assets/images/rambles/aef4.jpg"
+media:
+  - type: image
+    src: "assets/images/rambles/aef1.jpg"
+  - type: video
+    src: "assets/images/rambles/aef2.mp4"
+  - type: video
+    src: "assets/images/rambles/aef3.mp4"
+  - type: image
+    src: "assets/images/rambles/aef4.jpg"
 ---
 
 Apple-y Ever After is an unofficial Caleb Cupsleeve Fancafe held on 7-8 June at 5themoments Jalan Besar branch. We began working and planning for the cafe since January this year, when we were drinking at the bar under the first anniversary billboard. What started as a casual remark and idea became our passion project for the next 6 months.
