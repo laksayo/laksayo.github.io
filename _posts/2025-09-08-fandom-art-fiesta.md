@@ -5,8 +5,13 @@ date: 2025-09-08 12:00:00 +0000
 categories: [blog]
 tags: [event, boothing]
 author: Laksayo
-image: "/assets/images/my-first-post-image.jpg" # Optional, for a featured image
-excerpt: "I had heard positive feedback about past events held at Taste Orchard, so I decided to take part this time together with Harumoon and Ponponponka. It started like a joke but we went ahead with 3 pimples..."
+featured image: "/assets/images/rambles/faf-1"
+images:
+  - 
+
+videos:
+  -
+
 permalink: /rambles/fandom-art-fiesta/
 ---
 
