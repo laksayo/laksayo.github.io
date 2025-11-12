@@ -4,8 +4,8 @@ title: Blog
 body_class: blog-page
 ---
 
-<main id="blog-container" class="blog-page">
-  <section class="blog-grid">
+<section id="blog-container">
+  <div class="blog-grid">
     {% for post in site.posts %}
     <article class="blog-card">
       {% if post.featured_image %}
@@ -25,5 +25,5 @@ body_class: blog-page
       </section>
     </article>
     {% endfor %}
-  </section>
-</main>
+  </div>
+</section>
