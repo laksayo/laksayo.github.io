@@ -12,7 +12,7 @@
 
     <!-- Main content (for sticky footer) -->
     <main class="site-content">
-      <div class="main-content">
+      <div class="main-content {% if page.body_class == 'blog-page' %}full-width{% endif %}">
         {{ content }}
       </div>
     </main>
