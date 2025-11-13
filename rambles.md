@@ -19,7 +19,7 @@ body_class: blog-page
           <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
         </header>
         <section class="excerpt">
-          {{ post.excerpt }}
+           {{ post.excerpt | strip_html | truncatewords: 20 }}
           <p><a href="{{ post.url | relative_url }}">Read more →</a></p>
         </section>
       </article>
