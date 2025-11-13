@@ -3,7 +3,14 @@ layout: default
 title: "rambles"
 permalink: /rambles/ # the permalink should match the page path
 body_class: blog-page
+description: "Just rambles. I go to events, sometimes in costume, sometimes behind a table, sometimes just looking around."
 ---
+<section class="blog-header">
+  <h1 class="blog-title">{{ page.title }}</h1>
+  {% if page.description %}
+    <p class="blog-description">{{ page.description }}</p>
+  {% endif %}
+</section>
 
 <section id="blog-container">
   <div class="blog-grid">
