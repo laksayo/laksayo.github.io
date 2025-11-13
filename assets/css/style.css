@@ -434,7 +434,9 @@ button.outline:hover {
 
 .blog-card header,
 .blog-card .excerpt {
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
+  gap: 0;
 }
 
 .blog-card h2 {
@@ -443,7 +445,7 @@ button.outline:hover {
 }
 
 .blog-card h2 a {
-  color: var(--scheme-1-bg);
+  color: var(--scheme-2-text);
 }
 
 .blog-card .excerpt {
